@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+        <TextView
+            android:id="@+id/text_head_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librefranklin_regular"
+            android:text="Donation from "
+            android:textColor="@color/blackGray"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/sender_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/librefranklin_bold"
+            android:text="Mr.Ali"
+            android:textColor="@color/blackGray"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date_goal_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/librefranklin_regular"
+        android:text="Mon, Apr 17, 2018"
+        android:textColor="@color/lightGray2"
+        android:textSize="10sp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/amount_goal_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/librefranklin_bold"
+        android:text="$1000"
+        android:textColor="#5D6065"
+        android:textSize="24dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+</LinearLayout>

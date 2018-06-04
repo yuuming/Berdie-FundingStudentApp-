@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical"
+    android:background="#ECF1F8"
+    >
+
+    <TextView
+        android:id="@+id/total_balance_label_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/space"
+        android:text="Total Amount"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:fontFamily="@font/librefranklin_medium"
+        />
+
+
+        <TextView
+            android:id="@+id/allhistory_total_balance_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="$10000"
+            android:textAlignment="center"
+            android:textSize="32dp"
+            android:fontFamily="@font/librefranklin_bold"
+
+            />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/space" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allhistoryitem_list"
+            android:background="@color/white"
+            android:name="com.techtator.berdie.allHistory.AllHistoryItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.techtator.berdie.allHistory.AllHistoryItemFragment"
+            tools:listitem="@layout/fragment_allhistoryitem" />
+
+
+</LinearLayout>

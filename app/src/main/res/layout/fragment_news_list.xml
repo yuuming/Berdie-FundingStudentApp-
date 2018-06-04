@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:name="com.techtator.berdie.news.NewsFragment"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/recycler_view_news"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".news.NewsFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:listitem="@layout/fragment_news_item">
+</android.support.v7.widget.RecyclerView>

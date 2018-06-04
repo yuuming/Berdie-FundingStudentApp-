@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green2</item>
+        <item name="colorPrimaryDark">@color/green1</item>
+        <item name="colorAccent">@color/pink2</item>
+
+        <item name="colorControlNormal">@color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="toolbarStyle">@style/MyApp.Toolbar</item>
+    </style>
+
+    <style name="MyApp.Toolbar" parent="Widget.AppCompat.Toolbar">
+    <item name="android:background">@drawable/gradient</item>
+    <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+    <item name="subtitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SignupCustomTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/signup_background</item>
+    </style>
+
+
+
+    <style name="FirebaseUI.EditText">
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="FirebaseUI.TextInputEditText.PhoneField" parent="@style/FirebaseUI.EditText"/>
+    <style name="FirebaseUI.Text.TextInputLayout" parent="@style/FirebaseUI.EditText" />
+    <style name="FirebaseUI.Text.HintText" parent="@style/FirebaseUI.EditText" />
+
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#f4511e</item>
+        <item name="android:progressTint">#388e3c</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+</resources>

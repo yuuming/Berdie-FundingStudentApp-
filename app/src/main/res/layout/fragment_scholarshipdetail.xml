@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/image_scholarshipDetail"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@color/blackGray"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/textImage_scholarshipDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TD Scholarships for Community Leadership"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/librefranklin_bold"
+        />
+    
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/white"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        >
+
+        <TextView
+            android:id="@+id/upto_scholarshipdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up to"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/librefranklin_regular"
+
+            />
+
+        <TextView
+            android:id="@+id/dollar_scholarshipDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:layout_toRightOf="@+id/upto_scholarshipdetail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/librefranklin_bold"
+
+            />
+
+        <TextView
+            android:id="@+id/amount_scholarshipDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/upto_scholarshipdetail"
+            android:layout_toEndOf="@+id/dollar_scholarshipDetail"
+            android:layout_marginTop="10dp"
+            android:text="10,000"
+            android:textSize="20dp"
+            android:fontFamily="@font/librefranklin_bold"
+            />
+
+        <TextView
+            android:id="@+id/due_scholarshipDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DUE"
+            android:textSize="10dp"
+            android:layout_toLeftOf="@+id/date_scholarshipDetail"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/librefranklin_regular"
+            />
+
+        <TextView
+            android:id="@+id/date_scholarshipDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/amount_scholarshipDetail"
+            android:layout_marginEnd="19dp"
+            android:fontFamily="@font/librefranklin_bold"
+            android:text="Jan 22 2018"
+            android:layout_marginTop="3dp"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/upto_scholarshipdetail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingStart="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/text_scholarshipDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/librefranklin_regular"
+                android:text="Twenty TD Schloarships for Community Leadership are awarded to students in their last year of high school (outside Quebec) or CEGEP in improving their communtiy. Each Scholarship has a value of up to $70,000 and includes: " />
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_scholarshipDetail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/green5"
+        android:text="APPLY"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/librefranklin_bold"
+        />
+    
+
+
+
+
+</LinearLayout>

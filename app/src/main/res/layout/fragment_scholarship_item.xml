@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="13dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/cardview_scholarship"
+    android:layout_marginBottom="25dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_scholarshipS"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@color/blackGray"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/textView_scholarshipS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="TD Scholarships for Community Leadership"
+            android:textColor="@android:color/white"
+            android:textSize="23dp"
+            android:fontFamily="@font/librefranklin_bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView_scholarshipS">
+
+            <TextView
+                android:id="@+id/textView_uptoS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/librefranklin_regular"
+                android:text="Up to" />
+
+            <TextView
+                android:id="@+id/textView_dollarS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/textView_uptoS"
+                android:text="$"
+                android:textSize="20dp"
+                android:fontFamily="@font/librefranklin_bold"
+                />
+
+            <TextView
+                android:id="@+id/textView_amountS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/textView_dollarS"
+                android:text="10,000"
+                android:textSize="20dp"
+                android:fontFamily="@font/librefranklin_bold"
+                />
+
+            <TextView
+                android:id="@+id/textView_dueS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/textView_dateS"
+                android:fontFamily="@font/librefranklin_regular"
+                android:text="Due" />
+
+
+            <TextView
+                android:id="@+id/textView_dateS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:text="Mon, Jan 22, 2018"
+                android:textSize="18dp"
+                android:fontFamily="@font/librefranklin_bold"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

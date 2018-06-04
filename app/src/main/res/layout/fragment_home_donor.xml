@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home_donor.HomeDonorFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:id="@+id/donor_picture"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/donor_background"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/vancouver"
+               />
+           <TextView
+               android:id="@+id/total_my_donation"
+               android:layout_width="wrap_content"
+               android:layout_height="25dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="35dp"
+               android:layout_alignParentTop="true"
+               android:fontFamily="@font/librefranklin_bold"
+               android:textSize="22dp"
+               android:textColor="@color/white"
+               android:text="Total My Donation"/>
+           <TextView
+               android:id="@+id/total_my_donation_amount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/total_my_donation"
+               android:fontFamily="@font/librefranklin_bold"
+               android:textColor="@color/white"
+               android:textSize="30dp"
+               android:text="$ 10000"/>
+           <ImageView
+               android:id="@+id/donation_icon"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginStart="110dp"
+               android:layout_marginTop="15dp"
+               android:layout_below="@+id/donor_background"
+               android:src="@drawable/donation"/>
+           <TextView
+               android:id="@+id/donation_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginStart="10dp"
+               android:text="Donation"
+               android:textSize="24dp"
+               android:fontFamily="@font/librefranklin_bold"
+               android:textColor="@color/green3"
+               android:layout_toRightOf="@id/donation_icon"
+               android:layout_below="@id/donor_background"/>
+           <ImageView
+               android:id="@+id/donor_ticket_icon"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginStart="22dp"
+               android:layout_marginTop="16dp"
+               android:layout_below="@+id/donation_text"
+               android:src="@drawable/movieticket"/>
+           <TextView
+               android:id="@+id/this_month_raffle_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:layout_marginStart="10dp"
+               android:text="This Month Raffle"
+               android:textSize="22dp"
+               android:fontFamily="@font/librefranklin_bold"
+               android:textColor="@color/darkGray"
+               android:layout_toRightOf="@id/donor_ticket_icon"
+               android:layout_below="@id/donation_text"/>
+
+           <Button
+               android:id="@+id/donor_home_donate_icon"
+               android:layout_width="70dp"
+               android:layout_height="50dp"
+               android:layout_below="@+id/donation_text"
+               android:layout_toRightOf="@+id/this_month_raffle_text"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/button_gradient_pink"
+               android:fontFamily="@font/librefranklin_regular"
+               android:paddingLeft="4dp"
+               android:paddingRight="4dp"
+               android:text="+"
+               android:textSize="34dp"
+               android:textColor="@color/white"
+               android:textStyle="bold" />
+           <!--<TextView-->
+               <!--android:id="@+id/donor_number_text"-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:layout_marginTop="5dp"-->
+               <!--android:layout_marginStart="10dp"-->
+               <!--android:text="150K Donors"-->
+               <!--android:textSize="14dp"-->
+               <!--android:fontFamily="@font/librefranklin_bold"-->
+               <!--android:textColor="@color/darkGray"-->
+               <!--android:layout_toRightOf="@id/donor_ticket_icon"-->
+               <!--android:layout_below="@id/this_month_raffle_text"/>-->
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/home_donor_student_tap"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp">
+
+           <ImageView
+               android:id="@+id/donor_home_student_icon"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="13dp"
+               android:src="@drawable/sportingevent"
+               />
+           <TextView
+               android:id="@+id/donor_home_student_title"
+               android:layout_width="wrap_content"
+               android:layout_toRightOf="@+id/donor_home_student_icon"
+               android:layout_height="30dp"
+               android:layout_marginStart="7dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginTop="15dp"
+               android:textSize="18dp"
+               android:fontFamily="@font/librefranklin_bold"
+               android:text="Students"
+               />
+
+           <ImageView
+               android:id="@+id/goal_right_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="30dp"
+               android:layout_marginTop="13dp"
+               android:layout_alignParentRight="true"
+               android:layout_below="@+id/green_shadow"
+               android:layout_marginEnd="10dp"
+               android:src="@drawable/ic_chevron_right_black_24dp" />
+       </RelativeLayout>
+       <View
+           android:id="@+id/line_goal"
+           android:layout_width="360dp"
+           android:layout_height="1dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="5dp"
+           android:background="@color/colorPrimary" />
+
+
+       <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+           app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+           android:orientation="horizontal"
+           android:id="@+id/donor_home_recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           tools:listitem="@layout/fragment_donor_home_item"/>
+   </LinearLayout>
+
+</ScrollView>

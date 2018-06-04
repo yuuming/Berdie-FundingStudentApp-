@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <!-- berdie colors-->
+    <color name="lavender">#845EC2</color>
+    <color name="blue">#2C73D2</color>
+    <color name="green1">#0081CF</color>
+    <color name="green2">#0089BA</color>
+    <color name="green3">#008E9B</color>
+    <color name="green4">#008F7A</color>
+
+
+    <!-- berdie colors-->
+    <color name="pink1">#D65DB1</color>
+    <color name="pink2">#FF6F91</color>
+    <color name="orange1">#FF9671</color>
+    <color name="orenge2">#FFC75F</color>
+    <color name="yellow">#F9F871</color>
+
+    <color name="green5">#c1f1ea</color>
+    <color name="background_color">#ECF1F8</color>
+    <color name="lightblue">#d9e7fc</color>
+    <color name="lightblue2">#ecf1f8</color>
+    <color name="lightGray">#9f9f9f</color>
+    <color name="lightGray2">#bdbdbd</color>
+    <color name="darkGray">#7c828b</color>
+    <color name="blackGray">#5D6065</color>
+    <color name="badgePink">#FD7BAD</color>
+    <color name="accent_material_light">#ff40cf</color>
+</resources>

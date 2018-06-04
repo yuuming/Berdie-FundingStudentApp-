@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Berdie</string>
+    <string name="email">E-mail</string>
+    <string name="usename">User Name</string>
+    <string name="password">Password</string>
+    <string name="student">I am a student</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="phone">Phone</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forget_reset_message1">We need your email address </string>
+    <string name="forget_reset_message2">in case you forget your password</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="no_account">DON\'T HAVE AN ACCOUNT?</string>
+    <string name="your_tickets">Your Tickets</string>
+    <string name="day_hour_min_sec">REMAINING TIME</string>
+    <string name="raffle_buy_now">BUY NOW</string>
+    <string name="raffle">Raffle</string>
+    <string name="buy_tickets">BUY TICKETS</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="state">State</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="your_information">Your Information</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="donate_tickets">DONATE</string>
+    <!-- list for sign up spinner-->
+    <string-array name="list">
+        <item name="student">I am a student.</item>
+        <item name="donor">I am a donor.</item>
+    </string-array>
+    <string name="title_activity_edit_goal">EditGoalActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="goals">Goals</string>
+    <string name="news">News</string>
+    <string name="help">Help</string>
+    <string name="schoolarship">Schoolarship</string>
+    <string name="of">of</string>
+    <string name="dollar">$</string>
+    <string name="edit_button">EDIT</string>
+    <string name="profile_text">I have tutored statistics for 3 years. I have conducted my own research using many different types of statistics. I have tutored MS Word, MS Excel, research, sociology, and psychology.</string>
+    <string name="recent_donors">Recent Donors</string>
+    <string name="major">Major</string>
+    <string name="university">University</string>
+    <string name="edit">Edit</string>
+</resources>

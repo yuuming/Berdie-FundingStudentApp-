@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editGoal.EditGoalFragment"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightblue">
+
+        <EditText
+            android:id="@+id/goal_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:maxLines="1"
+            android:background="@drawable/text_border"
+            android:hint="Title"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"
+            android:paddingStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_goalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goal_title_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Amount"
+            android:maxLines="6"
+            android:fontFamily="@font/librefranklin_bold"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_dollarMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/textView_goalAmountNum"
+            android:layout_alignBottom="@+id/textView_goalAmountNum"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/textView_goalAmountNum"
+            android:layout_toStartOf="@+id/textView_goalAmountNum"
+            android:text="$"
+            android:fontFamily="@font/librefranklin_bold"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_goalAmountNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_goalAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="10,000"
+            android:fontFamily="@font/librefranklin_bold"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+
+        <SeekBar
+            android:id="@+id/seekBar_editGoal"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:progressDrawable="@drawable/gradient_progress"
+            android:layout_below="@+id/textView_dollarMark"
+            tools:progress="80"
+            android:max="100"
+            android:thumbTint="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <EditText
+            android:id="@+id/editText_goalBody"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/seekBar_editGoal"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="17dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/text_border"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:hint="Note"
+            android:fontFamily="@font/librefranklin_regular"
+            />
+
+        <Button
+            android:id="@+id/button_editGoal"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editText_goalBody"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_border"
+            android:backgroundTint="@color/pink2"
+            android:text="EDIT"
+            android:textSize="14dp"
+            android:fontFamily="@font/librefranklin_medium"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_editGoal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/text_border"
+            android:backgroundTint="@color/green5"
+            android:text="cancel"
+            android:textSize="14dp"
+            android:fontFamily="@font/librefranklin_medium"
+            android:textColor="@color/green4" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

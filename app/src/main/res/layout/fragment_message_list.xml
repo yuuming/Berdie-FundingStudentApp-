@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightblue2"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:id="@+id/username_messageListT"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/user_pic_cardview"
+        android:layout_below="@id/username_messageListT"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/userPic_messageList"
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_messageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_pic_cardview"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_marginTop="20dp"
+        app:layoutManager="LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <EditText
+            android:id="@+id/editText_messageList"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Type Something..."
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="italic"
+            />
+
+        <Button
+            android:id="@+id/sendButton_messageList"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_border"
+            android:backgroundTint="@color/background_color"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/home_my_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/librefranklin_regular"
+                    android:text="My Tickets" />
+
+                <ImageView
+                    android:id="@+id/home_ticket_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/home_my_ticket"
+                    android:src="@drawable/movieticket" />
+
+                <TextView
+                    android:id="@+id/home_ticket_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/home_ticket_icon"
+                    android:fontFamily="@font/librefranklin_bold"
+                    android:textSize="20dp"
+                    tools:text="10" />
+
+                <Button
+                    android:id="@+id/home_plus_icon"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/home_ticket_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_gradient_pink"
+                    android:fontFamily="@font/librefranklin_regular"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/thismonth_raff_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/this_month_raff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/librefranklin_bold"
+                        android:text="This Month Raffle"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/home_minimum_guarantee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/this_month_raff"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/librefranklin_light"
+                        android:text="Minimum Guarantee"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/home_minimum_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/home_minimum_guarantee"
+                        android:fontFamily="@font/librefranklin_bold"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        tools:text="$ 10,000" />
+
+                    <ImageView
+                        android:id="@+id/home_time_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/home_minimum_amount"
+                        android:layout_marginStart="60dp"
+                        android:src="@drawable/timewhite" />
+
+                    <TextView
+                        android:id="@+id/time_texts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/home_minimum_amount"
+                        android:layout_toRightOf="@+id/home_time_icon"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/librefranklin_regular"
+                        tools:text="5D:4H:9M:11S" />
+
+                    <TextView
+                        android:id="@+id/last_month_winner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/time_texts"
+                        android:fontFamily="@font/librefranklin_light"
+                        android:text="Last time winners"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/last_month_winner"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:elevation="12dp"
+                        app:cardCornerRadius="25dp"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9">
+
+                            <ImageView
+                                android:id="@+id/winner_pic1"
+                                android:layout_height="60dp"
+                                android:layout_width="60dp"
+                                >
+                            </ImageView>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/last_month_winner"
+                        android:layout_toRightOf="@+id/card_view_1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        android:elevation="12dp"
+                        app:cardCornerRadius="25dp"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9">
+
+                        <ImageView
+                            android:id="@+id/winner_pic2"
+                            android:layout_height="60dp"
+                            android:layout_width="60dp">
+                        </ImageView>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/last_month_winner"
+                        android:layout_toRightOf="@+id/card_view_2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        android:elevation="12dp"
+                        app:cardCornerRadius="25dp"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9">
+
+                        <ImageView
+                            android:id="@+id/winner_pic3"
+                            android:layout_height="60dp"
+                            android:layout_width="60dp">
+                        </ImageView>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/green_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/gradient_background"/>
+                <ImageView
+                    android:id="@+id/goal_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@+id/green_shadow"
+                    android:src="@drawable/sportingevent"
+                    />
+                <TextView
+                    android:id="@+id/student_home_goal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/goal_icon"
+                    android:layout_below="@+id/green_shadow"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/librefranklin_bold"
+                    android:text="@string/goals"
+                    />
+
+                <ImageView
+                    android:id="@+id/goal_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/green_shadow"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line_goal"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:id="@+id/student_home_goal_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:listitem="@layout/fragment_goal_item"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/hat_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/graduationcap"
+                    />
+                <TextView
+                    android:id="@+id/scholarship"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/hat_icon"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/librefranklin_bold"
+                    android:textSize="18dp"
+                    android:text="Scholarship"
+                    />
+                <ImageView
+                    android:id="@+id/scholarship_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line_school"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:id="@+id/student_home_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:listitem="@layout/home_studentfragment_item"/>
+    </LinearLayout>
+</ScrollView>

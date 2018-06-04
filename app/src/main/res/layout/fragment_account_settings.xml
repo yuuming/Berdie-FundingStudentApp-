@@ -1,0 +1,243 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#ECF1F8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_icon"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/librefranklin_medium"
+                android:text="@string/your_information"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_your_info"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary" />
+        <!--  First Name Label -->
+        <EditText
+            android:id="@+id/settings_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F" />
+        <!--  Last Name Label -->
+        <EditText
+            android:id="@+id/settings_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"/>
+        <!--  Email Label -->
+        <EditText
+            android:id="@+id/settings_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F" />
+        <!--  Phone Label -->
+        <EditText
+            android:id="@+id/settings_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:hint="@string/phone"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"/>
+        <!--  Password Label -->
+        <EditText
+            android:id="@+id/settings_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:layout_margin="10dp"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F" />
+        <!--  City Label -->
+        <EditText
+            android:id="@+id/settings_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:layout_margin="10dp"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"/>
+        <!--  Zip Code Label -->
+        <EditText
+            android:id="@+id/settings_zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:layout_margin="10dp"
+            android:hint="@string/zip_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"/>
+        <!--  State Label -->
+        <EditText
+            android:id="@+id/settings_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:layout_margin="10dp"
+            android:hint="@string/state"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F" />
+        <!--  Wallet Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/user_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/librefranklin_medium"
+                    android:text="@string/wallet_balance"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="14dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/settings_wallet_balance"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/librefranklin_medium"
+                android:text="0"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/wallet_line"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary" />
+        <EditText
+            android:id="@+id/settings_add_wallet_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/librefranklin_regular"
+            android:hint="@string/enter_amount"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:textColor="#9F9F9F"
+            android:textColorHint="#9F9F9F"/>
+        <!--  Edit Wallet Label -->
+
+        <!-- Add Wallet Balance button -->
+        <Button
+            android:id="@+id/settings_btn_add_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/button_gradient_green"
+            android:fontFamily="@font/librefranklin_bold"
+            android:layout_margin="10dp"
+            android:text="Add Balance"
+            android:textColor="@color/white" />
+        <!-- Save button -->
+        <Button
+            android:id="@+id/settings_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border_green"
+            android:fontFamily="@font/librefranklin_bold"
+            android:text="Save"
+            android:textColor="@color/green4"
+            />
+
+    </LinearLayout>
+</ScrollView>

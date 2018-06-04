@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingTop="30dp"
+    android:background="@color/lightblue2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Going" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/goal_list_ongoing"
+                android:name="com.techtator.berdie.goal.GoalFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.techtator.berdie.goal.GoalFragment"
+                tools:listitem="@layout/fragment_goal_item"
+                android:layout_marginBottom="30dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/accomplished_goal_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accomplished" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/black"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/goal_list_accomplished"
+                    android:name="com.techtator.berdie.goal.GoalFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:context="com.techtator.berdie.goal.GoalFragment"
+                    tools:listitem="@layout/fragment_goal_item"/>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_goal_button_goal_list"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:visibility="visible"
+                app:elevation="11dp"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

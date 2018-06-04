@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+   >
+
+    <TextView
+        android:id="@+id/id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/allhistory_sender_textview"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="buy a ticket"
+        android:paddingRight="20dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#5D6065"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/allhistory_sender_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/allhistory_reciever_textview"
+        android:paddingRight="10dp"
+        android:fontFamily="@font/librefranklin_bold"
+
+        android:text="x100"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#5D6065"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/allhistory_reciever_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/librefranklin_bold"
+        android:text="x100"
+        android:textColor="#5D6065"
+
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amount_textview"
+        android:layout_alignEnd="@+id/id_textview"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/librefranklin_regular"
+        android:text="April 20, 2018"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#9F9F9F"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/amount_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/librefranklin_bold"
+        android:text="$1000"
+        android:textColor="#5D6065"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/allhistory_updown_imageview"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/icons8_circled_down_right_96" />
+
+</RelativeLayout>

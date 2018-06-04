@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addGoal.AddGoalFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblue">
+
+            <EditText
+                android:id="@+id/goal_titleADD"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="60dp"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:background="@drawable/text_border"
+                android:fontFamily="@font/librefranklin_regular"
+                android:hint="Title"
+                android:paddingLeft="15dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_goalAmountADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goal_titleADD"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/librefranklin_bold"
+                android:text="Amount"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_dollarMarkADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_goalAmountNumADD"
+                android:layout_alignBottom="@+id/textView_goalAmountNumADD"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@+id/textView_goalAmountNumADD"
+                android:layout_toStartOf="@+id/textView_goalAmountNumADD"
+                android:fontFamily="@font/librefranklin_bold"
+                android:text="$"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/textView_goalAmountNumADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_goalAmountADD"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/librefranklin_bold"
+                android:text="0"
+                android:textSize="35dp" />
+
+
+            <SeekBar xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/seekBar_addGoalADD"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_below="@+id/textView_goalAmountNumADD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progressDrawable="@drawable/gradient_progress"
+                android:thumbTint="@color/white"
+                tools:progress="80" />
+
+
+            <EditText
+                android:id="@+id/editText_goalBodyADD"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/seekBar_addGoalADD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:background="@drawable/text_border"
+                android:gravity="top"
+                android:hint="Note"
+                android:paddingStart="17dp"
+                android:paddingTop="10dp" />
+
+            <Button
+                android:id="@+id/button_addGoalADD"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editText_goalBodyADD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_border"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/librefranklin_medium"
+                android:text="Add goal"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_cancelADD"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/button_addGoalADD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/text_border"
+                android:backgroundTint="@color/green5"
+                android:fontFamily="@font/librefranklin_medium"
+                android:text="cancel"
+                android:textColor="@color/green4" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
