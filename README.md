@@ -13,8 +13,8 @@ This app is for students to help their expense ( ex: student loan ) and future g
 # Members
 
 * Yuumi(Me) - Project Manager  
-* Sayaka - Backend  
-* Gami - Tech lead  
+* Sayaka - Tech lead, Backend  
+* Gami - Tech lead, Backend  
 * Madoka - UI design  
 * Bomin - QA  
 * Cem - QA  
