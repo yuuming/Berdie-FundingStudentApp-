@@ -19,9 +19,24 @@ This app is for students to help their expense ( ex: student loan ) and future g
 * Bomin - QA  
 * Cem - QA  
 
-
-
-**Technical:**  JAVA,  Android studio,  MVP,  Realtime Firebase,  LiveData,  Scrum,  
-  Unit testing  
+# Technical  
+* *JAVA*
+* *Android studio*  
+* *Realtime Firebase*
+* *LiveData*  
+* *Scrum* 
+* *Unit testing*  
   
-**My Task** Organize everyone's tasks and make a plan. Implement main page which has scholarship infomations,  purchasing raffle tickets and Student goals with Recyclerview, Edit profile page and bug fixes.
+# Architecture
+![0_4e8u5yug22blp4h8](https://user-images.githubusercontent.com/26515369/42732887-3a6a28a6-87de-11e8-8df3-b0ee1137f2b2.png)
+
+*We used Clean Architecture + MVP*  
+There are 3 reasons why we decided to use MVP pattern
+
+1. Clear separation of responsibilities between components. Activity and Fragment tend to get bigger If we do not use   
+2. architecture. MVP allows for an easier understanding and maintenance of the project.  
+3. Re-usability.since we can have multiple presenters to control views, we can reuse codes for different views. 
+Easy to unit-testing  
+
+# My Task
+Organize everyone's tasks and make a plan. Implement main page which has scholarship infomations,  purchasing raffle tickets and Student goals with Recyclerview, Edit profile page and bug fixes.
