@@ -20,12 +20,12 @@ This app is for students to help their expense ( ex: student loan ) and future g
 * Cem - QA  
 
 # Technical  
-* *JAVA*
-* *Android studio*  
-* *Realtime Firebase*
-* *LiveData*  
-* *Scrum* 
-* *Unit testing*  
+* JAVA
+* Android studio  
+* Realtime Firebase
+* LiveData  
+* Scrum  
+* Unit testing    
   
 # Architecture
 ![0_4e8u5yug22blp4h8](https://user-images.githubusercontent.com/26515369/42732887-3a6a28a6-87de-11e8-8df3-b0ee1137f2b2.png)
@@ -39,3 +39,24 @@ There are 3 reasons why we decided to use MVP pattern
 
 # My Task
 Organize everyone's tasks and make a plan. Implement main page which has scholarship infomations,  purchasing raffle tickets and Student goals with Recyclerview, Edit profile page and bug fixes.
+
+**My Main Part is below ↓↓↓**
+
+* Donor Side Top Page  
+
+ Donor can donate money to raffle or students
+ Donor can find a student and start conversation  
+ 
+![donor-side](https://user-images.githubusercontent.com/26515369/42747215-528aa62e-8890-11e8-94c0-db27ce37f4ac.gif)　　
+
+**Student Side Top Page**
+
+* Students can check scholarship and their own goals with horisontal recyclerview. 
+* Studnets can check message and notify how many unread message they have.  
+
+![ezgif com-resize 1](https://user-images.githubusercontent.com/26515369/42747949-2cbec792-8893-11e8-9e97-a0812f084309.gif)  
+
+**Student profile and edit profile Page**
+
+![ezgif com-resize 2](https://user-images.githubusercontent.com/26515369/42748203-2312a9b0-8894-11e8-9e55-f28d0875b19d.gif)
+
