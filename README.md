@@ -54,9 +54,11 @@ Organize everyone's tasks and make a plan. Implement main page which has scholar
 * Students can check scholarship and their own goals with horisontal recyclerview. 
 * Studnets can check message and notify how many unread message they have.  
 
-![ezgif com-resize 1](https://user-images.githubusercontent.com/26515369/42747949-2cbec792-8893-11e8-9e97-a0812f084309.gif)  
+![ezgif com-resize 1](https://user-images.githubusercontent.com/26515369/42750231-57902d00-889b-11e8-991b-85e888dd827b.gif)
+  
 
 **Student profile and edit profile Page**
 
-![ezgif com-resize 2](https://user-images.githubusercontent.com/26515369/42748203-2312a9b0-8894-11e8-9e55-f28d0875b19d.gif)
+![ezgif com-resize](https://user-images.githubusercontent.com/26515369/42750046-9fc2f752-889a-11e8-852a-25fb6edc6f6d.gif)
+
 
