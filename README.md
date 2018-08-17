@@ -62,7 +62,8 @@ Organize everyone's tasks and make a plan. Implement main page which has scholar
 **Student profile and edit profile Page**   
 
 * store local picture to fire base strage.   
-* taking picture and update picture. 
+* taking picture and update picture.   
+
 ![ezgif com-resize](https://user-images.githubusercontent.com/26515369/42750046-9fc2f752-889a-11e8-852a-25fb6edc6f6d.gif)
 
 
