@@ -12,12 +12,14 @@ This app is for students to help their expense ( ex: student loan ) and future g
 
 # Members
 
-* Yuumi(Me) - Project Manager  
-* Sayaka - Tech lead, Backend  
-* Gami - Tech lead, Backend  
+* Yuumi(Me) - Project lead  
+* Sayaka - Backend  
+* Gami - Tech lead  
 * Madoka - UI design  
-* Bomin - QA  
-* Cem - QA  
+* Bomin  - QA
+* Cem  - QA
+
+(every member did coding!!!!)
 
 # Technical  
 * JAVA
@@ -57,8 +59,10 @@ Organize everyone's tasks and make a plan. Implement main page which has scholar
 ![ezgif com-resize 1](https://user-images.githubusercontent.com/26515369/42750231-57902d00-889b-11e8-991b-85e888dd827b.gif)
   
 
-**Student profile and edit profile Page**
+**Student profile and edit profile Page**   
 
+* store local picture to fire base strage.   
+* taking picture and update picture. 
 ![ezgif com-resize](https://user-images.githubusercontent.com/26515369/42750046-9fc2f752-889a-11e8-852a-25fb6edc6f6d.gif)
 
 
